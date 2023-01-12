@@ -13,7 +13,7 @@ namespace redakcni_system
 
         public override string ToString()
         {
-            return string.Format(textBox);
+            return textBox;
         }
 
     }

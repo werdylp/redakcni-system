@@ -23,5 +23,6 @@ namespace redakcni_system
         {
             InitializeComponent();
         }
+
     }
 }

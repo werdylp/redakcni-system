@@ -19,9 +19,13 @@ namespace redakcni_system
     /// <summary>
     /// Interakční logika pro newArticle.xaml
     /// </summary>
+    /// 
+    
+    
     public partial class newArticle : Window
     {
-        
+        private List<Clanek> _list { get; set; }
+        List<string> clanky = new List<string>(5);
         public newArticle()
         {
             InitializeComponent();
@@ -33,11 +37,16 @@ namespace redakcni_system
         }
 
 
-            
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
 
+        public void Button_Click_1(object sender, RoutedEventArgs e) 
+        { 
+            clanky.Add(TextClanku.Text); 
         }
+
+
+
+
+
 
 
     }

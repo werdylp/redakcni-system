@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:redakcni_system"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Title="newArticle" Height="450" Width="800">
     <Grid>
         <Grid.Background>
@@ -14,10 +16,12 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <Label Content="Zde můžete začít psát:" HorizontalAlignment="Left" Margin="142,40,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="221" Margin="119,98,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="525" Background="#FFE4DDFF"/>
+        <Label Content="Zde můžete začít psát:" HorizontalAlignment="Left" Margin="317,27,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextClanku" HorizontalAlignment="Left" Height="221" Margin="119,98,0,0" TextWrapping="Wrap" Text="Text článku" VerticalAlignment="Top" Width="525" Background="#FFE4DDFF"/>
         <Button Content="Uložit" HorizontalAlignment="Left" Margin="119,365,0,0" VerticalAlignment="Top" Height="30" Width="263" Click="Button_Click_1"/>
         <Button Content="Zrušit" HorizontalAlignment="Left" Margin="400,365,0,0" VerticalAlignment="Top" Width="244" Height="30" Click="Button_Click"/>
+        <TextBox x:Name="Autor" HorizontalAlignment="Left" Margin="119,75,0,0" TextWrapping="Wrap" Text="Autor" VerticalAlignment="Top" Width="262"/>
+        <TextBox x:Name="Nadpis" HorizontalAlignment="Left" Margin="386,75,0,0" TextWrapping="Wrap" Text="Nadpis" VerticalAlignment="Top" Width="256"/>
 
 
     </Grid>
